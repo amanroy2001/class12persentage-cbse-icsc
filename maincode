@@ -1,0 +1,32 @@
+@aman
+package codewithaman;
+import java.util.Scanner;
+public class cbscpersentage {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter your name");
+		String s=sc.next();
+		System.out.println("please enter your marks obtain in english");
+		
+		System.out.println("please enter your marks obtain in hindi/optional subject");
+		
+		System.out.println("please enter your marks obtain in physics");
+		
+		System.out.println("please enter your marks obtain in chemistry");
+		
+		System.out.println("please enter your marks obtain in Maths/BIO");
+		double eng=sc.nextDouble();
+		double op=sc.nextDouble();
+		double phy=sc.nextDouble();
+		double che=sc.nextDouble();
+		double maths=sc.nextDouble();
+		System.out.println("enter the total marks of all subject");
+		double t=sc.nextDouble();
+	double total = eng+op+phy+che+maths;
+     double persentage=(total*100)/t;
+     System.out.println("Name- "+s);
+     System.out.println("your persentage is "+persentage+ "%");
+	}
+
+}
